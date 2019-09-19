@@ -1,45 +1,67 @@
 {
-	"name": "project-name",
-	"version": "0.0.1",
-	"description": "A description for your project.",
-	"main": "./dist/your-main-js-file.js",
-	"author": {
-		"name": "YOUR NAME",
-		"url": "http://link-to-your-website.com"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "http://link-to-your-git-repo.com"
-	},
-	"boilerplate": {
-		"version": "2.2.4",
-		"author": "Chris Ferdinandi",
-		"url": "https://gomakethings.com",
-		"repo": "http://github.com/cferdinandi/gulp-boilerplate"
-	},
-	"browserslist": [
-		"last 2 versions",
-		"> 0.25%"
-	],
-	"devDependencies": {
-		"gulp": "4.0.2",
-		"del": "3.0.0",
-		"lazypipe": "1.0.1",
-		"gulp-flatmap": "1.0.2",
-		"gulp-header": "2.0.5",
-		"gulp-rename": "1.4.0",
-		"jshint": "2.9.6",
-		"gulp-jshint": "2.1.0",
-		"jshint-stylish": "2.2.1",
-		"gulp-concat": "2.6.1",
-		"gulp-terser": "1.1.7",
-		"gulp-optimize-js": "1.1.0",
-		"gulp-sass": "4.0.2",
-		"gulp-postcss": "8.0.0",
-		"cssnano": "4.1.10",
-		"autoprefixer": "9.6.1",
-		"gulp-svgmin": "2.1.0",
-		"browser-sync": "2.26.7"
-	}
+  "name": "project-name",
+  "version": "0.0.1",
+  "description": "A description for your project.",
+  "main": "./dist/your-main-js-file.js",
+  "author": {
+    "name": "YOUR NAME",
+    "url": "http://link-to-your-website.com"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "gulp",
+    "test": "mocha -R spec ./test/*.js",
+    "lint": "eslint ./ || exit 0",
+    "lint-fix": "eslint ./ --fix || exit 0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://link-to-your-git-repo.com"
+  },
+  "boilerplate": {
+    "version": "2.2.4",
+    "author": "Chris Ferdinandi",
+    "url": "https://gomakethings.com",
+    "repo": "http://github.com/cferdinandi/gulp-boilerplate"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.25%"
+  ],
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.4",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "del": "5.1.0",
+    "lazypipe": "1.0.2",
+    "gulp-flatmap": "1.0.2",
+    "gulp-header": "2.0.9",
+    "gulp-rename": "1.4.0",
+    "jshint": "2.10.2",
+    "gulp-jshint": "2.1.0",
+    "jshint-stylish": "2.2.1",
+    "gulp-concat": "2.6.1",
+    "gulp-terser": "1.2.0",
+    "gulp-optimize-js": "1.1.0",
+    "gulp-sass": "4.0.2",
+    "gulp-postcss": "8.0.0",
+    "cssnano": "4.1.10",
+    "autoprefixer": "9.6.1",
+    "gulp-svgmin": "2.2.0",
+    "browser-sync": "2.26.7",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0",
+    "supertest": "^4.0.2"
+  }
 }
